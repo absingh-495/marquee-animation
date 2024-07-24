@@ -96,6 +96,37 @@ window.addEventListener(".scroll",function (){
   currentScroll = window.pageYOffset;
 })
 
+
+// Marquee
+
+window.addEventListener("wheel", function (dets) {
+	const vectors = document.querySelectorAll(".marquee");
+
+	if (dets.deltaY > 0) {
+		gsap.to(".marquee", {
+			transform: "translateX(-200%)",
+			duration: 5,
+			ease: "none",
+			repeat: -1,
+		});
+		vectors.forEach((vector) => {
+			vector.classList.remove("vectorRotateClockwise");
+			vector.classList.add("vectorRotateCounterClockwise");
+		});
+	} else {
+		gsap.to(".marquee", {
+			transform: "translateX(0%)",
+			duration: 5,
+			ease: "none",
+			repeat: -1,
+		});
+		vectors.forEach((vector) => {
+			vector.classList.remove("vectorRotateCounterClockwise");
+			vector.classList.add("vectorRotateClockwise");
+		});
+	}
+});
+
   </script>
 </body>
 </html>
