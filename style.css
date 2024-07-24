@@ -1,0 +1,60 @@
+ *{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+ }
+
+ body{
+  background-color: #a19f94;
+  font-family: "Gasoek one" ;
+  }
+
+ .spacer{
+  height: 800px;
+  /* background-color: blue; */
+ }
+
+ .marquee{
+  position: relative;
+  background-color: #000;
+  color: #fff;
+  padding: 10px 0;
+  /* font-weight: 600; */
+  font-size: 48px;
+  text-transform: uppercase;
+  color: yellow;
+  overflow: hidden;
+ }
+
+ .marquee_inner{
+  display: flex;
+  width:fit-content;
+  flex: auto;
+  flex-direction:row ;
+  /* background-color: red; */
+   
+ }
+
+ .marquee_part{
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  padding: 0 4px;
+ }
+
+ .arrow{
+  width: 68px;
+  height: 80px;
+  margin: 0 1em;
+  transform: rotate(45deg);
+  display: flex;
+  transition: all is cubic-bezier(0.075, 0.82, 0.165,1);
+ }
+
+ 
+ .arrow.active{
+  transform: rotate(90deg);
+  transition: all is cubic-bezier(0.075, 0.82, 0.165,1);
+ }
+
+ 
