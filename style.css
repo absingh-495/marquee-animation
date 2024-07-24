@@ -46,14 +46,21 @@
   width: 68px;
   height: 80px;
   margin: 0 1em;
-  transform: rotate(45deg);
+  transform: rotate(-45deg);
   display: flex;
   transition: all is cubic-bezier(0.075, 0.82, 0.165,1);
  }
 
- 
+ .arrow img {
+  transition: transform 0.5s ease; /* Smooth transition */
+}
+
+.arrow.flip img {
+  transform: scaleX(-1); /* Flip the image horizontally */
+}
+
  .arrow.active{
-  transform: rotate(90deg);
+  transform: rotate (90deg);
   transition: all is cubic-bezier(0.075, 0.82, 0.165,1);
  }
 
