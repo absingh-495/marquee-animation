@@ -60,7 +60,7 @@
 }
 
  .arrow.active{
-  transform: rotate (90deg);
+  transform: rotate (45deg);
   transition: all is cubic-bezier(0.075, 0.82, 0.165,1);
  }
 
