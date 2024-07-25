@@ -11,7 +11,7 @@
 
  .spacer{
   height: 800px;
-  background-color: blue;
+  /* background-color: blue; */
  }
 
  .marquee{
@@ -60,6 +60,8 @@
   transform: rotate (45deg);
   transition: all is cubic-bezier(0.075, 0.82, 0.165,1);
  }
+
+
 
   
 
