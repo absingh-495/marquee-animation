@@ -11,7 +11,7 @@
 
  .spacer{
   height: 800px;
-  /* background-color: blue; */
+  background-color: blue;
  }
 
  .marquee{
@@ -19,7 +19,6 @@
   background-color: #000;
   color: #fff;
   padding: 10px 0;
-  /* font-weight: 600; */
   font-size: 48px;
   text-transform: uppercase;
   color: yellow;
@@ -30,9 +29,7 @@
   display: flex;
   width:fit-content;
   flex: auto;
-  flex-direction:row ;
-  /* background-color: red; */
-   
+  flex-direction:row ;   
  }
 
  .marquee_part{
