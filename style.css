@@ -61,4 +61,15 @@
   transition: all is cubic-bezier(0.075, 0.82, 0.165,1);
  }
 
- 
+ /* Responsive for iPads and tablets */
+@media (max-width: 768px) {
+  .marquee {
+    font-size: 36px;
+  }
+
+  .arrow {
+    width: 50px;
+    height: 60px;
+    margin: 0 0.75em;
+  }
+}
